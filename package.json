@@ -1,0 +1,30 @@
+{
+  "private": true,
+  "scripts": {
+    "build": "npm run build:ncc && npm run build:zip",
+    "build:ncc": "ncc build ./src/main.ts --source-map -o ./dist/main",
+    "build:zip": "zip -r -j ./dist/main.zip ./dist/main/*"
+  },
+  "dependencies": {
+    "@databases/pg": "^5.4.1",
+    "@databases/pg-migrations": "^5.0.1",
+    "@databases/pg-schema-cli": "^4.3.0",
+    "@databases/pg-typed": "^4.3.0",
+    "@defichain/jellyfish-api-core": "^2.42.6",
+    "@defichain/jellyfish-wallet-classic": "latest",
+    "@defichain/whale-api-client": "latest",
+    "@defichain/whale-api-wallet": "latest",
+    "defichain": "^2.41.0",
+    "dotenv": "^16.0.0",
+    "pg": "^8.7.3"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.25",
+    "@types/pg": "^8.6.5",
+    "@types/react": "^18.0.5",
+    "@vercel/ncc": "latest",
+    "nodemon": "^2.0.15",
+    "ts-node": "^10.7.0",
+    "typescript": "^4.6.3"
+  }
+}

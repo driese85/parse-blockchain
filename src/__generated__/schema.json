@@ -1,0 +1,366 @@
+[
+  {
+    "name": "defichain_account_transactions",
+    "columns": [
+      {
+        "name": "block_height",
+        "isNullable": true,
+        "hasDefault": false,
+        "typeId": 23,
+        "typeName": "INTEGER"
+      },
+      {
+        "name": "id",
+        "isNullable": false,
+        "hasDefault": false,
+        "typeId": 23,
+        "typeName": "INTEGER"
+      },
+      {
+        "name": "owner",
+        "isNullable": true,
+        "hasDefault": false,
+        "typeId": 1043,
+        "typeName": "VARCHAR"
+      },
+      {
+        "name": "transaction_id",
+        "isNullable": true,
+        "hasDefault": false,
+        "typeId": 1043,
+        "typeName": "VARCHAR"
+      },
+      {
+        "name": "txn",
+        "isNullable": true,
+        "hasDefault": false,
+        "typeId": 21,
+        "typeName": "SMALLINT"
+      },
+      {
+        "name": "type",
+        "isNullable": true,
+        "hasDefault": false,
+        "typeId": 1043,
+        "typeName": "VARCHAR"
+      }
+    ]
+  },
+  {
+    "name": "defichain_account_transactions_amounts",
+    "columns": [
+      {
+        "name": "id",
+        "isNullable": false,
+        "hasDefault": false,
+        "typeId": 23,
+        "typeName": "INTEGER"
+      },
+      {
+        "name": "token_amount",
+        "isNullable": true,
+        "hasDefault": false,
+        "typeId": 700,
+        "typeName": "FLOAT4"
+      },
+      {
+        "name": "tokenid",
+        "isNullable": true,
+        "hasDefault": false,
+        "typeId": 21,
+        "typeName": "SMALLINT"
+      },
+      {
+        "name": "transaction_id",
+        "isNullable": true,
+        "hasDefault": false,
+        "typeId": 23,
+        "typeName": "INTEGER"
+      }
+    ]
+  },
+  {
+    "name": "defichain_blocks",
+    "columns": [
+      {
+        "name": "created_at",
+        "isNullable": true,
+        "hasDefault": false,
+        "typeId": 1184,
+        "typeName": "TIMESTAMPTZ"
+      },
+      {
+        "name": "difficulty",
+        "isNullable": true,
+        "hasDefault": false,
+        "typeId": 700,
+        "typeName": "FLOAT4"
+      },
+      {
+        "name": "hash",
+        "isNullable": true,
+        "hasDefault": false,
+        "typeId": 1043,
+        "typeName": "VARCHAR"
+      },
+      {
+        "name": "height",
+        "isNullable": false,
+        "hasDefault": false,
+        "typeId": 23,
+        "typeName": "INTEGER"
+      },
+      {
+        "name": "masternode",
+        "isNullable": true,
+        "hasDefault": false,
+        "typeId": 1043,
+        "typeName": "VARCHAR"
+      },
+      {
+        "name": "minter",
+        "isNullable": true,
+        "hasDefault": false,
+        "typeId": 1043,
+        "typeName": "VARCHAR"
+      },
+      {
+        "name": "minter_block_count",
+        "isNullable": true,
+        "hasDefault": false,
+        "typeId": 23,
+        "typeName": "INTEGER"
+      },
+      {
+        "name": "reward",
+        "isNullable": true,
+        "hasDefault": false,
+        "typeId": 700,
+        "typeName": "FLOAT4"
+      },
+      {
+        "name": "transaction_count",
+        "isNullable": true,
+        "hasDefault": false,
+        "typeId": 21,
+        "typeName": "SMALLINT"
+      }
+    ]
+  },
+  {
+    "name": "defichain_rewards",
+    "columns": [
+      {
+        "name": "block_height",
+        "isNullable": true,
+        "hasDefault": false,
+        "typeId": 23,
+        "typeName": "INTEGER"
+      },
+      {
+        "name": "id",
+        "isNullable": false,
+        "hasDefault": false,
+        "typeId": 23,
+        "typeName": "INTEGER"
+      },
+      {
+        "name": "owner",
+        "isNullable": true,
+        "hasDefault": false,
+        "typeId": 1043,
+        "typeName": "VARCHAR"
+      },
+      {
+        "name": "poolid",
+        "isNullable": true,
+        "hasDefault": false,
+        "typeId": 21,
+        "typeName": "SMALLINT"
+      },
+      {
+        "name": "rewardtype",
+        "isNullable": true,
+        "hasDefault": false,
+        "typeId": 1043,
+        "typeName": "VARCHAR"
+      },
+      {
+        "name": "tokenamount",
+        "isNullable": true,
+        "hasDefault": false,
+        "typeId": 700,
+        "typeName": "FLOAT4"
+      },
+      {
+        "name": "tokenid",
+        "isNullable": true,
+        "hasDefault": false,
+        "typeId": 21,
+        "typeName": "SMALLINT"
+      }
+    ]
+  },
+  {
+    "name": "defichain_tokens",
+    "columns": [
+      {
+        "name": "created_at",
+        "isNullable": true,
+        "hasDefault": false,
+        "typeId": 1184,
+        "typeName": "TIMESTAMPTZ"
+      },
+      {
+        "name": "isdat",
+        "isNullable": true,
+        "hasDefault": false,
+        "typeId": 16,
+        "typeName": "BOOL"
+      },
+      {
+        "name": "isloantoken",
+        "isNullable": true,
+        "hasDefault": false,
+        "typeId": 16,
+        "typeName": "BOOL"
+      },
+      {
+        "name": "islps",
+        "isNullable": true,
+        "hasDefault": false,
+        "typeId": 16,
+        "typeName": "BOOL"
+      },
+      {
+        "name": "minted",
+        "isNullable": true,
+        "hasDefault": false,
+        "typeId": 700,
+        "typeName": "FLOAT4"
+      },
+      {
+        "name": "name",
+        "isNullable": true,
+        "hasDefault": false,
+        "typeId": 1043,
+        "typeName": "VARCHAR"
+      },
+      {
+        "name": "symbol",
+        "isNullable": true,
+        "hasDefault": false,
+        "typeId": 1043,
+        "typeName": "VARCHAR"
+      },
+      {
+        "name": "tokenaid",
+        "isNullable": true,
+        "hasDefault": false,
+        "typeId": 21,
+        "typeName": "SMALLINT"
+      },
+      {
+        "name": "tokenbid",
+        "isNullable": true,
+        "hasDefault": false,
+        "typeId": 21,
+        "typeName": "SMALLINT"
+      },
+      {
+        "name": "tokenid",
+        "isNullable": true,
+        "hasDefault": false,
+        "typeId": 21,
+        "typeName": "SMALLINT"
+      }
+    ]
+  },
+  {
+    "name": "defichain_transactions",
+    "columns": [
+      {
+        "name": "block_height",
+        "isNullable": true,
+        "hasDefault": false,
+        "typeId": 23,
+        "typeName": "INTEGER"
+      },
+      {
+        "name": "total_vout_value",
+        "isNullable": true,
+        "hasDefault": false,
+        "typeId": 700,
+        "typeName": "FLOAT4"
+      },
+      {
+        "name": "transaction_id",
+        "isNullable": false,
+        "hasDefault": false,
+        "typeId": 1043,
+        "typeName": "VARCHAR"
+      },
+      {
+        "name": "tx_order",
+        "isNullable": true,
+        "hasDefault": false,
+        "typeId": 21,
+        "typeName": "SMALLINT"
+      },
+      {
+        "name": "vin_count",
+        "isNullable": true,
+        "hasDefault": false,
+        "typeId": 21,
+        "typeName": "SMALLINT"
+      },
+      {
+        "name": "vout_count",
+        "isNullable": true,
+        "hasDefault": false,
+        "typeId": 21,
+        "typeName": "SMALLINT"
+      }
+    ]
+  },
+  {
+    "name": "defichain_vins_vouts",
+    "columns": [
+      {
+        "name": "id",
+        "isNullable": false,
+        "hasDefault": false,
+        "typeId": 23,
+        "typeName": "INTEGER"
+      },
+      {
+        "name": "owner",
+        "isNullable": true,
+        "hasDefault": false,
+        "typeId": 1043,
+        "typeName": "VARCHAR"
+      },
+      {
+        "name": "token_amount",
+        "isNullable": true,
+        "hasDefault": false,
+        "typeId": 700,
+        "typeName": "FLOAT4"
+      },
+      {
+        "name": "tokenid",
+        "isNullable": true,
+        "hasDefault": false,
+        "typeId": 21,
+        "typeName": "SMALLINT"
+      },
+      {
+        "name": "transaction_id",
+        "isNullable": true,
+        "hasDefault": false,
+        "typeId": 1043,
+        "typeName": "VARCHAR"
+      }
+    ]
+  }
+]
